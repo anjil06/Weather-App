@@ -6,7 +6,16 @@ body {
     background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
 }
-
+.app-logo {
+    display: block;
+    margin: 0 auto 100px auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(33, 147, 176, 0.10);
+    background: #fff;
+    object-fit: contain;
+}
 .container {
     background: #fff;
     border-radius: 18px;
@@ -136,4 +145,5 @@ h1 {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+
 }
