@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather API</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather API</h1>
+        <div class="search">
+            <input 
+                type="text"  
+                id="cityInput" 
+                name="search"
+                class="search-input" 
+                placeholder="Search location..."
+            >
+            <button class="search-button" id="searchbtn">Search</button>
+        </div>
+        <div class="loading-container"><p id="loading">Loading...</p></div>
+        
+        <div id="error" class="error hidden">
+            <p id="errormessage"></p>
+        </div>
+        <div id="Weatherdisplay" class="weather-display hidden">
+          <h2 id="cityname"></h2>
+          <div class="weather-info">
+            <div class="temperature">
+              <span id="temperature"></span>
+              <span class="unit">&#176;C</span>
+            </div>
+            <div class="description">
+              <p id="weatherdescription"></p>
+            </div>
+          </div>
+          <div class="weather-details">
+            <div class="detail-item">
+              <span class="label">Feels like:</span>
+              <span id="feelslike"></span>&#176;C
+              
+            </div>
+            <div class="detail-item">
+              <span class="label">Humidity:</span>
+              <span id="humidity"></span>%
+            </div>
+            <div class="detail-item">
+              <span class="label">Wind Speed:</span>
+              <span id="windspeed"></span>m/s
+            </div>
+          </div>
+        </div>
+  <script src="script.js"></script>
+    </div>
+</body>
+</html>
