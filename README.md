@@ -68,7 +68,7 @@ cd Weather-App
 2. Replace the API key in your JavaScript file:
 
 ```javascript
-const apiKey = "YOUR_API_KEY";
+const apiKey = "47b077337d3cf29864b64da2d24da93d";
 ```
 
 ---
